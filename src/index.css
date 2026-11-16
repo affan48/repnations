@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #121212;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar for desktop */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F5F5F3;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #737373;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #121212;
+  }
+}
+
+/* Utilities for luxury athletic design */
+.aspect-4-5 {
+  aspect-ratio: 4 / 5;
+}
+
+.text-editorial {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
